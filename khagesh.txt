@@ -1,0 +1,80 @@
+Skip to content
+Chat history
+
+You said:
+problem 4:Build an AI financial tool  with automated expense categorization, predictive spending analysis goal tracking , and budget alerts. Deliver a wed app with predictive analysis dashboard. build using html and css
+ChatGPT said:
+
+Thought for a few seconds
+Ai-financial-tool
+· html
+<!doctype html>
+    els.saveSettings.onclick = ()=>{
+      state.settings.monthlyBudget = Number(els.monthlyBudget.value||0)
+      state.settings.savingsGoal = Number(els.savingsGoal.value||0)
+      commit()
+      alert('Settings saved')
+    }
+
+    els.exportJson.onclick = ()=>{ alert(JSON.stringify(state, null, 2)) }
+    els.downloadJson.onclick = ()=>{
+      const blob = new Blob([JSON.stringify(state, null, 2)],{type:'application/json'}); const url = URL.createObjectURL(blob)
+      const a = document.createElement('a'); a.href=url; a.download='aft-data.json'; a.click(); URL.revokeObjectURL(url)
+    }
+    els.undoLast.onclick = ()=>{ state.tx.pop(); commit() }
+
+    els.importSample.onclick = ()=>{
+      // sample data for demo (last 8 months)
+      const now = new Date(); const sample = []
+      const cats = ['Groceries','Transport','Coffee','Rent','Entertainment','Utilities']
+      for(let m=8;m>=1;m--){
+        const d = new Date(now.getFullYear(), now.getMonth()-m+1, 15)
+        const total = Math.round((Math.random()*600+400)*100)/100
+        // split into 3 tx
+        for(let i=0;i<3;i++){
+          const amt = Math.round((total*(Math.random()*0.6+0.1))/3*100)/100
+          sample.push({id:'s'+Date.now()+Math.random(), date: d.toISOString().slice(0,10), amount:amt, desc:cats[i%cats.length]+' purchase', category:cats[i%cats.length]})
+        }
+      }
+      state.tx = state.tx.concat(sample); commit()
+    }
+
+    els.clearData.onclick = ()=>{ if(confirm('Clear all stored data?')){ state.tx=[]; state.rules=[]; state.settings={}; commit() } }
+
+    // load settings into form
+    function loadSettings(){ els.monthlyBudget.value = state.settings.monthlyBudget || '' ; els.savingsGoal.value = state.settings.savingsGoal || '' }
+
+    // startup: ensure existing tx have categories
+    if(state.tx.some(t=>!t.category)) for(const t of state.tx) t.category = categorize(t)
+    loadSettings(); commit()
+
+    // helper: listen for storage events (if user opens two tabs)
+    window.addEventListener('storage', ()=>{ Object.assign(state, DB.load()); commit() })
+
+  </script>
+</body>
+</html>
+
+Done — I created a single-file web app prototype called AI-Financial-Tool.html in the canvas.
+
+Open the file in the canvas to view and run it. It includes:
+
+Automated expense categorization using editable keyword→category rules (first-match).
+
+Predictive spending analysis (linear regression on monthly totals) with a chart and next-month prediction.
+
+Goal tracking & budget alerts (set monthly budget; see predicted vs budget).
+
+Category breakdown chart, transaction table with inline category edit, import sample data, export/download JSON, and localStorage persistence.
+
+If you want I can:
+
+Add CSV import/export, date-range filters, or reorderable rules.
+
+Use a more advanced model for prediction (seasonality) or add server sync.
+Tell me which improvements you'd like and I'll update the prototype.
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
