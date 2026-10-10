@@ -1,0 +1,388 @@
+# SLIDE 1: TITLE SLIDE
+
+## COMPANY ASSET MANAGER
+
+**Hackathon Project – Web Development**
+
+* **Project Name:** Company Asset Manager
+* **Technology:** HTML and CSS
+* **Development Tool:** Visual Studio Code (VS Code)
+* **Project Type:** Web Development
+* **Batch:** 19
+
+**Project Tagline:** Organizing Assets. Improving Efficiency. Simplifying Management.
+
+---
+
+# SLIDE 2: INTRODUCTION
+
+## What Is Company Asset Manager?
+
+Company Asset Manager is a web-based application concept designed to help organizations organize and track their physical assets.
+
+Companies use different assets, such as laptops, desktop computers, printers, projectors, office furniture, and networking devices. Managing these assets manually can be difficult and time-consuming.
+
+This project provides a centralized interface for displaying asset information, employee assignments, maintenance records, and reports.
+
+### Main Objectives
+
+* Organize company asset information.
+* Track equipment assigned to employees.
+* Display asset availability and condition.
+* Improve asset management.
+* Reduce dependence on scattered manual records.
+
+---
+
+# SLIDE 3: PROBLEM STATEMENT
+
+## Problems in Traditional Asset Management
+
+Many organizations manage their assets using paper records or spreadsheets. These methods can create several difficulties.
+
+### Major Problems
+
+1. **Manual Record Keeping:** Maintaining records takes time and effort.
+2. **Asset Tracking Difficulties:** Identifying the location of equipment can be challenging.
+3. **Assignment Confusion:** It may be difficult to determine which employee is using an asset.
+4. **Maintenance Delays:** Equipment may not receive timely servicing.
+5. **Duplicate Records:** Manual data entry can cause errors.
+6. **Reporting Difficulties:** Preparing inventory reports manually takes time.
+
+### Proposed Solution
+
+The Company Asset Manager provides an organized web interface where asset inventory, employee details, assignments, maintenance information, and reports can be viewed in separate sections.
+
+---
+
+# SLIDE 4: PROJECT OBJECTIVES AND FEATURES
+
+## Project Objectives
+
+The main objective is to simplify asset management by providing a structured and user-friendly interface.
+
+### Key Features
+
+* Dashboard displaying asset summaries.
+* Asset inventory management interface.
+* Employee information section.
+* Asset assignment records.
+* Maintenance information.
+* Asset reports.
+* Navigation between different sections.
+* Organized tables and status indicators.
+* User-friendly design.
+* Foundation for future database integration.
+
+### Expected Outcome
+
+The project demonstrates how a web interface can make company asset information easier to organize, view, and understand.
+
+**Note:** In the HTML and CSS prototype, these features display predefined information. Dynamic data management requires additional programming.
+
+---
+
+# SLIDE 5: DASHBOARD MODULE
+
+## Dashboard Overview
+
+The dashboard is the main page of the application. It provides a quick overview of the company's asset inventory.
+
+### Dashboard Information
+
+* Total number of assets.
+* Available assets.
+* Assigned assets.
+* Assets under maintenance.
+* Recent asset activities.
+* Asset status summaries.
+
+### Example Dashboard Statistics
+
+| Category          | Sample Count |
+| ----------------- | -----------: |
+| Total Assets      |          150 |
+| Available Assets  |           35 |
+| Assigned Assets   |          100 |
+| Under Maintenance |           15 |
+
+*These figures are sample values for presentation purposes.*
+
+### Benefits
+
+* Provides a quick overview of assets.
+* Helps users understand asset distribution.
+* Makes asset information easier to review.
+* Reduces the need to check multiple records manually.
+
+---
+
+# SLIDE 6: ASSET INVENTORY MODULE
+
+## Asset Inventory Management
+
+The Asset Inventory module is designed to display information about company equipment.
+
+### Asset Details
+
+* Asset ID.
+* Asset name.
+* Category.
+* Brand or manufacturer.
+* Purchase date.
+* Location.
+* Condition.
+* Assignment status.
+
+### Example Asset Records
+
+| Asset ID | Asset Name   | Category    | Status      |
+| -------- | ------------ | ----------- | ----------- |
+| AST001   | Dell Laptop  | Computer    | Assigned    |
+| AST002   | HP Printer   | Printer     | Available   |
+| AST003   | Projector    | Electronics | Maintenance |
+| AST004   | Office Chair | Furniture   | Available   |
+
+### Benefits
+
+* Keeps asset information organized.
+* Helps identify available equipment.
+* Makes asset conditions easier to review.
+* Supports inventory planning.
+* Helps identify equipment requiring repairs.
+
+---
+
+# SLIDE 7: EMPLOYEE AND ASSET ASSIGNMENT MODULE
+
+## Employee Management
+
+The employee section displays information about employees who may receive company equipment.
+
+### Employee Information
+
+* Employee ID.
+* Employee name.
+* Department.
+* Designation.
+* Contact information.
+* Assigned assets.
+
+## Asset Assignment
+
+The assignment section shows which assets are allocated to employees.
+
+### Assignment Details
+
+* Assignment ID.
+* Asset ID.
+* Employee ID.
+* Assignment date.
+* Expected return date.
+* Assignment status.
+
+### Example Records
+
+| Employee ID | Employee Name | Department | Assigned Asset   |
+| ----------- | ------------- | ---------- | ---------------- |
+| EMP001      | Rahul Kumar   | IT         | Dell Laptop      |
+| EMP002      | Priya Sharma  | HR         | Desktop Computer |
+| EMP003      | Arjun Reddy   | Finance    | Laptop           |
+
+### Benefits
+
+* Improves visibility into asset allocation.
+* Helps identify who is using each asset.
+* Supports equipment return tracking.
+* Reduces confusion about assigned equipment.
+
+*Employee details shown here are illustrative examples.*
+
+---
+
+# SLIDE 8: MAINTENANCE AND REPORTS MODULE
+
+## Maintenance Management
+
+The maintenance module is designed to organize information about equipment that requires servicing or repairs.
+
+### Maintenance Details
+
+* Maintenance ID.
+* Asset ID.
+* Problem description.
+* Maintenance date.
+* Service provider.
+* Repair cost.
+* Maintenance status.
+
+### Example Maintenance Records
+
+| Asset   | Issue            | Status      |
+| ------- | ---------------- | ----------- |
+| Laptop  | Battery problem  | In Progress |
+| Printer | Paper jam        | Completed   |
+| Desktop | Slow performance | Pending     |
+
+## Reports Module
+
+The reports section organizes asset-related information for review.
+
+### Types of Reports
+
+* Asset inventory report.
+* Employee assignment report.
+* Available asset report.
+* Maintenance report.
+* Asset condition report.
+* Department-wise asset report.
+
+### Benefits
+
+These modules help administrators review equipment conditions, organize maintenance records, and understand asset distribution.
+
+---
+
+# SLIDE 9: TECHNOLOGIES USED
+
+## HTML, CSS, and Visual Studio Code
+
+### 1. HTML
+
+HTML stands for HyperText Markup Language.
+
+It creates the structure of the webpage.
+
+**Uses:**
+
+* Headings and paragraphs.
+* Navigation menus.
+* Tables and forms.
+* Dashboard cards.
+* Content sections.
+* Buttons and links.
+
+### 2. CSS
+
+CSS stands for Cascading Style Sheets.
+
+It controls the appearance and layout of the webpage.
+
+**Uses:**
+
+* Colors and backgrounds.
+* Fonts and text styles.
+* Page layouts.
+* Table formatting.
+* Spacing and alignment.
+* Responsive design.
+
+### 3. Visual Studio Code
+
+Visual Studio Code is used to write, edit, and organize the project files.
+
+### Project Files
+
+* `index.html` — Contains the webpage structure.
+* `style.css` — Contains the styling rules.
+
+**Important:** This version uses only HTML and CSS, without JavaScript.
+
+---
+
+# SLIDE 10: SYSTEM ARCHITECTURE AND WORKING
+
+## System Architecture
+
+The project interface consists of two main parts.
+
+### 1. HTML Structure
+
+HTML defines the dashboard, inventory, employee information, assignments, maintenance records, and reports.
+
+### 2. CSS Presentation
+
+CSS controls the layout, colors, typography, tables, navigation, and overall appearance.
+
+### Architecture Flow
+
+**User → Web Browser → HTML Structure → CSS Styling → Displayed Interface**
+
+## Working Procedure
+
+1. Open the project in a web browser.
+2. View the dashboard.
+3. Navigate to the asset inventory.
+4. Review employee information.
+5. View asset assignments.
+6. Check maintenance records.
+7. Review the reports section.
+
+### Implementation Limitation
+
+The current prototype displays predefined information. Saving new records, editing data, deleting assets, and updating dashboard statistics require additional functionality.
+
+A future full-stack version could use JavaScript, Node.js, Express.js, and MongoDB.
+
+---
+
+# SLIDE 11: ADVANTAGES, LIMITATIONS, AND FUTURE SCOPE
+
+## Advantages
+
+* Simple and organized interface.
+* Easy-to-understand dashboard.
+* Separate sections for asset information.
+* Improved visibility of inventory records.
+* Beginner-friendly web development project.
+* Easy customization using HTML and CSS.
+
+## Limitations
+
+* Asset records are predefined.
+* No database integration.
+* No dynamic add, edit, or delete operations.
+* Search and filtering are not functional.
+* No user authentication.
+* Reports are not generated automatically.
+
+## Future Enhancements
+
+* Add JavaScript for interactive features.
+* Integrate a database to store records.
+* Develop a backend using Node.js and Express.js.
+* Add secure login and role-based access.
+* Implement asset search and filtering.
+* Add QR codes for asset identification.
+* Provide maintenance reminders.
+* Enable report downloads.
+
+These improvements could transform the prototype into a complete asset management application.
+
+---
+
+# SLIDE 12: CONCLUSION AND THANK YOU
+
+## Conclusion
+
+The Company Asset Manager is a web development project designed to organize company asset information through a structured dashboard interface.
+
+The project covers asset inventory, employee information, asset assignments, maintenance records, and reports.
+
+HTML provides the webpage structure, while CSS controls its appearance and layout. Together, these technologies demonstrate fundamental web development concepts.
+
+Although the current version is a frontend prototype, it provides a foundation for a future full-stack application with database integration and dynamic asset management features.
+
+### Project Summary
+
+* **Project:** Company Asset Manager
+* **Technology:** HTML and CSS
+* **Tool:** Visual Studio Code
+* **Purpose:** Organize and track company assets
+* **Batch:** 19
+
+## THANK YOU!
+
+**Batch 19**
+
+*Organizing Assets. Improving Efficiency. Simplifying Management.*
